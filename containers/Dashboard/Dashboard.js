@@ -7,6 +7,7 @@ import { toggleMenu } from '../../redux/actions'
 import { faBars, faHome, faImages, faNewspaper, faTasks, faUsers, faVideo } from '@fortawesome/free-solid-svg-icons';
 import { Slide } from 'react-awesome-reveal'
 import Link from "next/link"
+import { faCreditCard } from '@fortawesome/free-regular-svg-icons'
 
 const menus = [
     { id: "home", to: "/", title: "Home", icon: faHome },
@@ -15,6 +16,7 @@ const menus = [
     { id: "albums", to: "/albums", title: "Albums", icon: faVideo },
     { id: "photos", to: "/photos", title: "Photos", icon: faImages },
     { id: "posts", to: "/posts", title: "Posts", icon: faNewspaper },
+    { id: "cards", to: "/cards", title: "Cards", icon: faCreditCard },
 ]
 
 const Dashboard = ({ children, menu }) => {

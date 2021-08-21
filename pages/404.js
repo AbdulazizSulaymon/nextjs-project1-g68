@@ -1,13 +1,8 @@
-import { useState } from "react"
-
 const Page404 = () => {
-    const [margin, setmargin] = useState(100)
-
     return (
-        <div style={{
-            margin: `${margin}px`
-        }}>
-            <h1>404</h1>
+        <div style={{ margin: `100px` }}
+            className="bg-danger p-4 rounded shadow">
+            <h1 className="text-white">404</h1>
         </div>
     )
 }
